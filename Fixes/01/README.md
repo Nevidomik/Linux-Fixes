@@ -52,7 +52,7 @@ UA: Копіюємо файл сервісу та активуємо його. <
 EN: Copy the service file and enable it. <br>
 
 ```bash
-sudo cp scripts/vbox-fix.service /etc/systemd/system/
+sudo cp vbox-fix.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable vbox-fix.service
 ```
