@@ -24,7 +24,8 @@ UA: Налаштування автоматичного скрипта, який
 EN: Setting up an automated script that creates nodes at every boot (after udev). <br>
 
 📂 Файли / Files <br>
-Поруч з цим документом знаходяться два файли: <br> <br>
+UA: Поруч з цим документом знаходяться два файли: <br>
+EN: The following two files are located near this document: <br> <br>
 
 - fix-vbox.sh — Bash-скрипт логіки. <br>
 - vbox-fix.service — Systemd Unit для автозапуску. <br> <br>
@@ -39,7 +40,7 @@ sudo cp fix-vbox.sh /usr/local/bin/
 
 Крок 2: Налаштування прав доступу / Set Permissions <br>
 UA: Критично важливо надати права на виконання (+x або 755). Власником файлу має бути root. <br>
-EN: It is critical to grant execution permissions (+x or 755). The file owner must be root. <br> <br>
+EN: It is critical to grant execution permissions (+x or 755). The file owner must be root. <br>
 
 ```bash
 sudo chmod 755 /usr/local/bin/fix-vbox.sh
@@ -48,7 +49,7 @@ sudo chown root:root /usr/local/bin/fix-vbox.sh
 
 Крок 3: Встановлення сервісу / Install Service <br>
 UA: Копіюємо файл сервісу та активуємо його. <br>
-EN: Copy the service file and enable it. <br> <br>
+EN: Copy the service file and enable it. <br>
 
 ```bash
 sudo cp scripts/vbox-fix.service /etc/systemd/system/
