@@ -1,0 +1,10 @@
+[Unit]
+Description=Fix VirtualBox Guest Device Node (Late Boot)
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/local/bin/fix-vbox.sh
+
+[Install]
+WantedBy=multi-user.target
